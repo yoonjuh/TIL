@@ -7,6 +7,8 @@
   </head>
   <body>
     <div id="app"></div>
+    <!--========================================================-->
+    <!--For externalize dependencies to be loaded via CDN-->
     <% if(process.env.NODE_ENV === 'production') { %>
     <script
       crossorigin
@@ -17,5 +19,6 @@
       src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
     ></script>
     <% } %>
+    <!--========================================================-->
   </body>
 </html>
