@@ -16,8 +16,23 @@ function flat(arr, depth) {
 
 const testArray = [12, 11, [23, 52]];
 
-/** FROM ES 2019,  flat function is a built-in function. */
-testArray.flat(2);
+testArray.flat(2); /** FROM ES 2019,  flat function is a built-in function. */
+/** ==================================================================== */
+
+/** flatMap */
+const arr = [4, 19, 25];
+
+console.log(arr.map(value => [value]));
+// => [[4], [20], [26]]
+
+console.log(arr.flatMap(value => [value]));
+// => [4, 20, 26]
+
+const anotherArr = [[10], [9], [1], [4], [7]];
+
+const testFlatMap = anotherArr.flatMap(val => (val >= 10 ? [] : value));
+
+console.log(testFlatMap); /** [9, 1, 4, 7] */
 
 /** ================================================================== */
 
