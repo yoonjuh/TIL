@@ -36,6 +36,13 @@ console.log(testFlatMap); /** [9, 1, 4, 7] */
 
 /** ================================================================== */
 
+/** Object.fromEntries */
+// Object.fromEntries function does the exact opposite job of Object.entries
+
+const testObjectFromEntries = [["name", "bob"], ["age", 99]];
+console.log(Object.fromEntries(testObjectFromEntries)); // { name: 'bob', age: 99 }
+
+/** ================================================================== */
 /** STRING */
 
 /** trimStart, trimEnd */
